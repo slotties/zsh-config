@@ -1,0 +1,31 @@
+# k8s
+alias k="kubectl"
+alias -g DECODE_SECRET="| jq '.data | map_values(@base64d)'"
+
+alias k_current="kubectl config current-context"
+
+# kafka
+alias kafka-topics="kafka-topics --command-config ~/.kafkarc"
+
+alias kafka-consumer-groups="kafka-consumer-groups --command-config ~/.kafkarc"
+
+alias kcat="kcat -X security.protocol=SSL"
+
+# random
+alias ll="ls -lh"
+alias d="dirs -v"
+alias mvnnt="mvn -Dmaven.test.skip=true"
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say "
+
+alias -g L="| less"
+alias -g XG="| xargs grep"
+alias -g G="| grep"
+alias -g GV="| grep -v"
+alias -g SORT="| sort"
+alias -g LINES="| wc -l"
+alias -g JSON="| jq"
+alias -g XML="| xmllint --format -"
+
+alias gc="git commit"
+
+. ~/.zsh_aliases.private

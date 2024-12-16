@@ -1,2 +1,4 @@
 .DS_Store
-zshenv.private
+
+*.private
+.zsh_history
